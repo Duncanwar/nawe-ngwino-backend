@@ -3,6 +3,6 @@ import admin from "./admin";
 
 export default async (app) => {
   app.use(cors());
-  admin();
+  // admin();
   return app;
 };

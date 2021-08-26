@@ -1,4 +1,4 @@
-import { User } from "../database/models/index";
+import { user } from "../database/models/index";
 import "dotenv/config";
 import ERole from "../constants/ERole";
 import Generic from "../helpers/Generic";
@@ -12,7 +12,7 @@ export default async () => {
     password: PASSWORD,
     nid: NID,
   };
-  const user = await Generic.findByPhoneNo(User, ADMIN_NUMBER);
+  const user = await Generic.findByPhoneNo(user, ADMIN_NUMBER);
   console.log(user);
   // const user await Generic.create(User, admin);
 };

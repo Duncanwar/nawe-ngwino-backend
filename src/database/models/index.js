@@ -12,7 +12,6 @@ let sequelize;
 if (config.url) {
   sequelize = new Sequelize(process.env[config.url], config);
 } else {
-  console.error("done");
   sequelize = new Sequelize(
     config.database,
     config.username,
