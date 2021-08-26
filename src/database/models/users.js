@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       phone_verified: { type: DataTypes.BOOLEAN, defaultValue: false },
       email_verified: { type: DataTypes.BOOLEAN, defaultValue: false },
       nid: { type: DataTypes.INTEGER, allowNull: false },
-      total_deposit: { type: DataTypes.BIGINT, allowNull: false },
+      total_deposit: { type: DataTypes.BIGINT },
       deposit_monthly: DataTypes.BIGINT,
       late_deposit_fee: DataTypes.BIGINT,
       birth_date: DataTypes.DATE,
